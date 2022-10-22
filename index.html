@@ -4,49 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--style sheet-->
     <link rel="stylesheet" href="style.css" />
+    <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>NFT preview page</title>
   </head>
   <body>
-    <div class="center">
-      <div class="grid1x2">
-        <div class="picture">
-          <img class="main" src="images/image-equilibrium.jpg" alt="" />
-          <img class="view" src="images/icon-view.svg" alt="" />
-          <div class="box"></div>
-        </div>
-        <div class="text">
-          <h3><a href="#">Equilibrium #3429</a></h3>
-          <p>Our Equilibrium Collection promotes balance and calm.</p>
-          <div class="order">
-            <div class="eth">
-              <img class="image__eth" src="images/icon-ethereum.svg" alt="" />
-              <p class="ETH">0.041 ETH</p>
-            </div>
-            <div class="days">
-              <img class="image__clock" src="images/icon-clock.svg" alt="" />
-              <p class="three">3 days left</p>
+    <!--main container-->
+    <div class="main-container">
+      <main>
+        <!--Card-->
+        <div class="nft-card">
+          <div class="card-img">
+            <img src="./images/image-equilibrium.jpg" alt="" />
+            <div class="card-overlay">
+              <img
+                src="./images/icon-view.svg"
+                alt="Icon View"
+                width="48"
+                height="48"
+              />
             </div>
           </div>
-          <hr />
-          <div class="tag">
-            <img class="tag__icon" src="images/image-avatar.png" alt="" />
-            <div class="para">
-              <p class="tag__p">Creation of <a href="#">Jules Wyvern</a></p>
+
+          <div class="card-content">
+            <span class="content_header"> Equilibrum #3429 </span>
+            <p class="content_description">
+              Our Equlibrum collection promotes balance and calm
+            </p>
+            <!--icons-->
+            <div class="icons">
+              <div class="ETH">
+                <img src="./images/icon-ethereum.svg" alt="" />
+                <span class="ETH_span">0.041 ETH</span>
+              </div>
+              <div class="days">
+                <img src="./images/icon-clock.svg" alt="" />
+                <span class="clock">3 days left</span>
+              </div>
+            </div>
+            <hr />
+            <div class="footer">
+              <img class="avatar" src="./images/image-avatar.png" alt="" />
+              <span class="footer_span"
+                >Creation of <a href="#">Jules Wyvern</a></span
+              >
             </div>
           </div>
         </div>
-      </div>
+      </main>
+      <span class="final">designed by Yishak Abrham</span>
     </div>
   </body>
 </html>
